@@ -1,0 +1,478 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('bg.jpg') no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background: transparent; 
+    /* position: sticky; */
+    width: 100%;
+    z-index: 1000; 
+}
+
+
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-right: 0px;
+    border-bottom: 1PX solid white;
+    box-shadow: 0px 15px 10px -15PX white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+}
+
+.nav-part-1 h3 {
+
+    border: 2px solid rgb(8, 8, 8);
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-style: normal;
+}
+
+.nav-part-1 h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.nav-part-1 h2:hover {
+    color: rgb(196, 64, 219);
+    cursor: pointer;
+}
+
+.nav-part-1 h2 {
+    font-size: 30px;
+    color: rgb(245, 243, 245);
+    text-align: center;
+}
+
+
+.nav-part-1 i {
+    /* height:50px; */
+    border: 2.5px solid rgb(48, 1, 38);
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+ul li a {
+    padding: 0px 18px;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .2s ease-in;
+    font-size: 25px;
+}
+
+ul li a:hover {
+    color: rgb(196, 64, 219);
+
+}
+ul li ul.dropdown li {
+    display: block;
+    font-size: smaller;
+}
+
+ul li ul.dropdown{
+    width:200px;
+    background-color: #000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+    
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+            
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20vh);
+    
+}
+
+/* Styling the login box wrapper */
+.wrapper {
+    width: 350px;
+    height: 370px;
+    background: transparent;
+    border: 2px solid rgb(91, 169, 233);
+    color: aliceblue;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 20px 20px 70px 20px purple;
+    margin-top: 450px;
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-box{
+    margin-top: 50px;
+}
+#login{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(91, 169, 233);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translatey(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+top: -2px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: antiquewhite;
+    padding: 0px 35px 0px 5px ;
+
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember-forget {
+    /* margin-top: 60px; */
+    font-size: .9em ;
+    font width: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+    color: white;
+
+}
+.remember-forget a:hover {
+    color: rgba(231, 4, 193, 0.836);
+    text-decoration: none;
+}
+.remember-forget a{
+    color: rgb(117, 207, 243);
+}
+.btn{
+    width: 100%;
+    height: 35px;
+    background: rgb(55, 195, 230);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(49, 5, 31);
+}
+.btn:hover{
+    color: rgb(218, 40, 158);
+}
+.login-register a{
+    color:  rgb(117, 207, 243);
+    margin-left: 10px;
+}
+.login-register a:hover {
+    color: rgba(231, 4, 193, 0.836);
+
+}
+
+/*FOOTER*/
+.footer {
+    background: #000;
+    color: rgb(180, 28, 173);
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 400px;
+}
+
+.footer p {
+    color: #8a8a8a;
+
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 20%;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    padding-left: 10px;
+
+}
+
+.footer-col-1 img {
+    margin-left: 20px;
+}
+
+.footer-col-1 h2,
+p {
+    padding: 0 30px;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 50px;
+
+}
+
+.footer-col-2 img {
+
+    margin-bottom: 20px;
+
+
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+.footer-col-3 ul li {
+    list-style-type: none;
+    padding: 4px;
+    font-size: medium;
+    color: wheat;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.footer-col-3 a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    padding: 3px;
+
+}
+
+.footer-col-4 li {
+    list-style: none;
+    padding: 2px;
+
+}
+
+.footer-col-4 a {
+    padding: 4px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(212, 191, 191);
+    padding-bottom: 3px;
+
+}
+
+.footer hr {
+    border: none;
+    background: #d4c1d0;
+    height: 1px;
+    margin: 20px 0;
+    text-shadow: #490739;
+}
+
+.footer-col-1 img {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 5px;
+
+}
+
+.footer-col-3 {
+    margin-right: 20px;
+}
+
+/*prodetails*/
+#prodetails {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    padding: 20px 0px;
+
+}
+
+#prodetails .single-pro-details {
+    color: white;
+    width: 50%;
+    padding: 30px 80px;
+
+}
+
+#prodetails .single-pro-details h6 {
+    padding: 40px 0px 20px 0px;
+
+
+}
+
+#prodetails .single-pro-details h2 {
+    padding: 18px 0px 10px 0px;
+}
+
+#prodetails .single-pro-details input {
+    color: white;
+    padding: 5px 0px 4px 0px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#prodetails .single-pro-details h3 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#prodetails .single-pro-details span {
+    color: #8a8a8a;
+}
+
+
+
+
+/* Add this code to the end of your existing CSS */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .nav-part-1 {
+        margin-bottom: 20px;
+    }
+    
+    ul {
+        flex-direction: column;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    .wrapper {
+        width: 90%;
+        max-width: 400px;
+        margin: 100px auto;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .nav-part-1 h2 {
+        font-size: 24px;
+    }
+    
+    ul li a {
+        font-size: 18px;
+    }
+    
+    .wrapper {
+        margin: 50px auto;
+    }
+    
+    .input-box {
+        height: 40px;
+    }
+    
+    .input-box input {
+        font-size: 14px;
+    }
+    
+    .remember-forget {
+        font-size: 0.8em;
+    }
+    
+    .btn {
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .login-register a {
+        margin-left: 5px;
+        font-size: 0.8em;
+    }
+}
+s
+
+
+
