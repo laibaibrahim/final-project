@@ -1,0 +1,387 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgba(38, 10, 39, 0.87); */
+}
+body {
+    padding-top: 15vh;
+    background-color: black;
+    color: wheat;
+}
+
+header {
+    background-color: black; 
+    position: fixed;
+    width: 100%;
+    top: 0; 
+}
+
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-right: 0px;
+    border-bottom: 1PX solid white;
+    box-shadow: 0px 15px 10px -15PX white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+}
+
+.nav-part-1 h3 {
+
+    border: 2px solid rgb(8, 8, 8);
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-style: normal;
+}
+
+.nav-part-1 h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.nav-part-1 h2:hover {
+    color: rgb(196, 64, 219);
+    cursor: pointer;
+}
+
+.nav-part-1 h2 {
+    font-size: 30px;
+    color: rgb(245, 243, 245);
+    text-align: center;
+}
+
+
+.nav-part-1 i {
+    /* height:50px; */
+    border: 2.5px solid rgb(48, 1, 38);
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+ul li a {
+    padding: 0px 18px;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .2s ease-in;
+    font-size: 25px;
+}
+
+ul li a:hover {
+    color: rgb(196, 64, 219);
+
+}
+ul li ul.dropdown li {
+    display: block;
+    font-size: smaller;
+}
+
+ul li ul.dropdown{
+    width:200px;
+    background-color: #000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+    
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+         /* cart  */
+
+
+
+
+
+.total-price{
+    justify-content: right;
+    align-items: flex-end;
+    text-align: center;
+}
+/* Style the number input */
+input[type="number"] {
+    width: 50px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    background-color: #cccccc; 
+    border-radius: 5px; 
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+    background-color: #ccc; 
+    border-radius: 5px; 
+}
+
+    /* cart */
+    .cartpage{
+        margin: 80px auto;
+        padding-bottom: 30px;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .cart-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    th{
+        text-align: left;
+        padding: 5px;
+        color: #8a8a8a;
+        background-color: #000;
+        font-weight: normal;
+    }
+    td{
+        padding: 10px 5px;
+    }
+    td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+
+    }
+    td a{
+        color: purple;
+        font-size; 12px;
+    }
+    td img{
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    .total-price{
+        display:flex;
+      justify-content: center; 
+    }
+     .total-price{
+        border: 3px solid rgb(110, 16, 71);
+        width: 100%;
+        max-width: 300px;
+        align-items: center;
+        font-size: 20px;
+        margin-top:30px ;
+        margin-left: 30px;
+     }
+     td:last-child{
+        text-align:left;
+
+     }
+     th:last-child{
+        text-align: left;
+     } 
+     h2{
+        color:rgb(238, 27, 150);
+        margin-top: 20px;
+        margin-left: 40px;
+     }
+     
+    
+     
+
+
+ /* footer  */
+.footer{
+    background: #000;
+    color: rgb(180, 28, 173) ;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-bottom: 0px;
+    }
+    .footer p{
+        color: #8a8a8a;
+    
+    }
+    .footer h3
+    {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4
+    {
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+        flex-basis: 30%;
+    }
+    .footer-col-1 h3,p{
+        padding:  0 30px ;
+    }
+    .footer-col-2{
+        flex: 1;
+        text-align: center;
+    }
+    .footer-col-2 img{
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    .footer-col-3, .footer-col-4{
+        flex-basis: 12%;
+        text-align: center;
+    }
+    ul li
+    {
+        list-style-type:  none;
+        padding: 10px;
+    }
+    .app-logo{
+        margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+    }
+    .copyright
+    {
+    text-align: center;
+    }
+    .footer hr{
+        border: none;
+        background: #c44545;
+        height:1px ;
+        margin:20px 0 ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-part-1 h2 {
+        font-size: 24px;
+    }
+
+    ul li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .cartpage {
+        margin: 50px auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td input {
+        width: 30px;
+        height: 20px;
+        padding: 3px;
+    }
+    .total-price {
+        justify-content: center;
+    }
+
+    .total-price table {
+        width: auto;
+    }
+
+    .total-price table td {
+        display: block;
+        text-align: center;
+    }
+
+    .total-price table td:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 479px) {
+    /* Further adjustments for smaller screens */
+    header nav ul {
+        padding: 0;
+    }
+
+    .nav-part-1 h2 {
+        font-size: 20px;
+    }
+
+    ul li a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .cartpage {
+        margin: 30px auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    td input {
+        width: 25px;
+        height: 18px;
+        padding: 2px;
+    }
+    .total-price{
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+    
+    }
+
+
